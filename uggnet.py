@@ -89,8 +89,6 @@ def Ugg():
 
     # model
     model = Model(inputs=[img_input], outputs=outone)
-    model.load_weights('/home/jan/Keras_HED/checkpoints_jannet/BSDMODEL/checkpoint.47-0.02.hdf5')
-    #filepath = '/home/jan/Keras_HED/vgg16/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5'
     #load_weights_from_hdf5_group_by_name(model, filepath)
 
     model.compile(loss=cross_entropy_balanced,
